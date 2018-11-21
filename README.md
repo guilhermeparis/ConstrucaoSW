@@ -9,16 +9,24 @@ Após isso, executar a solução na sua IDE de preferência. A porta de execuç�
 
 A API possui mapeados os seguintes objetos (para mapear outros objetos, é necessário adicionar as respectivas classes em com.yamapi.crud_rest.repository):
 
-Project: 
+Project:
+
     String projectName; (PK)
+    
     int numberMembers;
+    
     String description;
+    
     String dueDate;
     
 User: 
+
     String username; (PK)
+    
     String password;
+    
     String name;
+    
     String email;
  
  
@@ -29,9 +37,13 @@ User:
  As operações HTTP suportadas são:
  
  Get - retorna todos os elementos de uma coleção (esta requisição não possui parâmetros).
+ 
  Get - retorna um objeto especificado
+ 
  Post - cria um novo objeto
+ 
  Put - atualiza um objeto especificado (obs: campos não declarados no body da requisição são atualizados com o valor <null>)
+    
  Delete - remove um objeto especificado
  
  Segue abaixo um exemplo de body para requisições POST e PUT:
